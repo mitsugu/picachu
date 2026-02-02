@@ -80,3 +80,25 @@ ul.check-list li::before {
 	width: 384px;
 	margin-right: 30vw;
 }
+p.right {
+	margin-right:3em;
+	text-align:right;
+}
+/* --- スマホ・共通の基本設定 --- */
+.right {
+  width: 100%;        /* スマホでは横幅いっぱい */
+  max-width: 100%;    /* はみ出し防止 */
+  margin-right: 0;    /* スマホでは右余白をなくす */
+  margin-bottom: 20px; /* 下に少し隙間を作る */
+  height: auto;       /* 高さは自動調整 */
+}
+
+/* --- PC・タブレット向けの調整 (画面幅が768px以上の場合) --- */
+@media screen and (min-width: 768px) {
+  .right {
+    width: 384px;     /* 指定のサイズに戻す */
+    margin-right: 30vw; /* 指定の余白に戻す */
+    float: right;      /* 右に寄せる（元のレイアウトに合わせる場合） */
+    margin-left: 20px;  /* テキストとの間に隙間を作る */
+  }
+}
