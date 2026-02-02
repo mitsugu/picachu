@@ -92,12 +92,18 @@ p.right {
   margin-bottom: 20px; /* 下に少し隙間を作る */
   height: auto;       /* 高さは自動調整 */
 }
+div.left.thumbnail > figure,
+div.right.thumbnail > figure {
+	margin: 0;
+	width: 256px;        /* PCでの画像/地図の横幅 */
+	height:auto;
+}
 
 /* --- PC・タブレット向けの調整 (画面幅が768px以上の場合) --- */
 @media screen and (min-width: 768px) {
   .right {
     width: 384px;     /* 指定のサイズに戻す */
-    margin-right: 30vw; /* 指定の余白に戻す */
+    margin-right: 20vw; /* 指定の余白に戻す */
     float: right;      /* 右に寄せる（元のレイアウトに合わせる場合） */
     margin-left: 20px;  /* テキストとの間に隙間を作る */
   }

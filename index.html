@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="htmltools/opal.css" />
 	<script defer src="htmltools/opal.js"></script>
 	<link rel="stylesheet" href="htmltools/wrappedmedia.css" />
+	<link rel="stylesheet" href="htmltools/autoslider.css" />
+	<script defer src="htmltools/autoslider.js"></script>
 	<link rel="stylesheet" href="index.css" />
 	<link rel="stylesheet" href="fonts.css" />
 
@@ -45,6 +47,7 @@
 			<button class="tab-btn" data-target="tab4">どうすれば逢える？</button>
 			<button class="tab-btn" data-target="tab5">逢うために必要なこと</button>
 			<button class="tab-btn" data-target="tab6">スキルリスト (ダイビング経験者向け)</button>
+			<button class="tab-btn" data-target="tab7">写真著作者情報</button>
 		</div>
 
 		<div class="tab-contents">
@@ -63,8 +66,6 @@
 					<img loading="lazy" src="images/fig05.jpg" alt="ウデフリツノザヤウミウシ（通称ピカチュウ）">
 					<img loading="lazy" src="images/fig06.jpg" alt="ウデフリツノザヤウミウシ（通称ピカチュウ）">
 					<img loading="lazy" src="images/fig07.jpg" alt="ウデフリツノザヤウミウシ（通称ピカチュウ）">
-					<img loading="lazy" src="images/fig08.jpg" alt="ウデフリツノザヤウミウシ（通称ピカチュウ）">
-					<img loading="lazy" src="images/fig09.jpg" alt="ウデフリツノザヤウミウシ（通称ピカチュウ）">
 				</div>
 				<div class="content">
 					<p>ピカチュウ……</p>
@@ -100,7 +101,7 @@
 				<h2>どうすれば逢える？</h2>
 				<div class="content">
 					<div class="container">
-						<div class="right figure-right">
+						<div class="right">
 							<figure>
 								<img loading="lazy" width="512" height="348" src="images/fig12.jpg">
 							</figure>
@@ -121,7 +122,7 @@
 					</div>
 					<h3>住崎、グラスワールド、備前ってどこ？</h3>
 					<div class="container">
-						<div class="right figure-right">
+						<div class="right">
 							<figure>
 								<a href="images/fig15.png" target="_blank" rel="noopener"><img loading="lazy" src="images/fig15.png" width="512" height="291"></a>
 							</figure>
@@ -134,7 +135,7 @@
 					<h4>住崎</h4>
 					<div class="content">
 						<div class="container">
-							<div class="right" style="width:384px;margin-right:30vw;">
+							<div class="right">
 								<figure>
 									<img loading="lazy" src="images/fig16.jpg" width="512" height="384">
 								</figure>
@@ -148,7 +149,7 @@
 					<h4>グラスワールド</h4>
 					<div class="content">
 						<div class="container">
-							<div class="right" style="width:384px;margin-right:30vw;">
+							<div class="right">
 								<figure>
 									<img loading="lazy" src="images/fig17.jpg" width="512" height="384">
 								</figure>
@@ -161,7 +162,7 @@
 					<h4>備前</h4>
 					<div class="content">
 						<div class="container">
-							<div class="right" style="width:384px;margin-right:30vw;">
+							<div class="right">
 								<figure>
 									<img loading="lazy" src="images/fig18.jpg" width="512" height="384">
 								</figure>
@@ -181,7 +182,24 @@
 					<div class="container">
 						<div class="right">
 							<figure>
-								<img loading="lazy" src="images/fig19.jpg" width="512" height="384">
+								<div class="slider-wrapper"
+								     data-auto-play="true"
+								     data-duration="3.5"
+								     data-aspect-ratio="512/384"
+									 data-max-width="512px">
+
+								    <button class="slider-btn prev">＜</button>
+								    <div class="slider-container">
+								        <div class="slide-item bg-w"><img src="images/fig14.jpg" alt="いくよ！！ジャイアントストライドエントリー！！"></div>
+								        <div class="slide-item bg-w"><img src="images/fig13.jpg" alt="&copy;SHANGCHIEH</a><br>なにを見つけたのかな？<br>素敵な子 (ピカチュウ！？) を見つけたらダイバーはこうなるよ&hearts;" title="&copy;SHANGCHIEH</a><br>なにを見つけたのかな？<br>素敵な子 (ピカチュウ！？) を見つけたらダイバーはこうなるよ&hearts;"></div>
+								        <div class="slide-item bg-w"><img src="images/fig19.jpg" alt="講習中"></div>
+								        <div class="slide-item bg-w"><img src="images/fig20.jpg" alt="ボートダイブ"></div>
+								        <div class="slide-item bg-w"><img src="images/fig21.jpg" alt="&copy;SHANGCHIEH</a><br>なにを見つけたのかな？<br>素敵な子 (ピカチュウ！？) を見つけたらダイバーはこうなるよ&hearts;" title="&copy;SHANGCHIEH</a><br>なにを見つけたのかな？<br>素敵な子 (ピカチュウ！？) を見つけたらダイバーはこうなるよ&hearts;"></div>
+								        <div class="slide-item bg-w"><img src="images/fig22.jpg" alt="カメラ準備中"></div>
+								    </div>
+								    <button class="slider-btn next">＞</button>
+								    <div class="status-icon" style="display: none;"></div>
+								</div>
 							</figure>
 						</div>
 						<p>ピカチュウは水深 -10m〜-18m くらいの海のなかでくらしているよ</p>
@@ -232,6 +250,123 @@
 					<li>砂を巻き上げない海底からの離脱方法 (これができるようになると中級一歩手前)</li>
 					<li>潜水計画の立案と実施、振り返り</li>
 					</ul>
+				</div>
+			</div>
+			<div id="tab7" class="tab-item">
+				<h2>写真著作者情報</h2>
+				<div class="content">
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig01.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY 2.0<br><a href="https://www.flickr.com/photos/steve_childs/" class="external" target="_blank">&copy;Etienne Gosse</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig02.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY 2.0<br><a href="https://www.flickr.com/photos/steve_childs/" class="external" target="_blank">&copy;Etienne Gosse</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig03.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY-SA 2.0<br><a href="https://www.flickr.com/photos/xanth/" class="external" target="_blank">&copy; Xanth Huang </a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig04.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY-SA 2.0<br><a href="https://www.flickr.com/photos/xanth/" class="external" target="_blank">&copy; Xanth Huang </a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig05.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY-SA 2.0<br><a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Pikachu_Nudibranch_Thecacera_pacifica_1.jpg" class="external" target="_blank">&copy;Olakhalaf</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig06.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY 2.0<br><a href="https://www.izuzuki.com/Zukan/Slug/fujita/udehuri.html" class="external" target="_blank">&copy;Izuzuki Diver</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig07.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY 2.0<br><a href="https://www.izuzuki.com/Zukan/Slug/fujita/udehuri.html" class="external" target="_blank">&copy;Izuzuki Diver</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig12.jpg">
+							</figure>
+						</div>
+						<p>Public Domain<br><a href="https://storymaps.arcgis.com/stories/c0ba9a4cb8d54e3281d7e91f45c6777a" class="extern" target="_blank">National Oceanic and Atmospheric Administration</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig13.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY-SA 2.0<br><a href="https://www.flickr.com/photos/mega_100921" class="external" target="_blank">&copy;SHANGCHIEH</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig14.jpg">
+							</figure>
+						</div>
+						<p>License: CC0<br><a href="https://pixabay.com/users/firstonline-701604/" class="external" target="_blank">FIRSTonline</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig19.jpg">
+							</figure>
+						</div>
+						<p>Public Domain<br><a href="https://gemini.google.com/share/066718565656" class="external" target="_blank">Mitsugu Oyama (a.k.a. OrzBruford, miyamafukashi)</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig20.jpg">
+							</figure>
+						</div>
+						<p>License: CC0<br><a href="https://pixabay.com/users/uccisea1970-3225816/" class="external" target="_blank">uccisea1970</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig21.jpg">
+							</figure>
+						</div>
+						<p>License: CC BY-SA 2.0<br><a href="https://www.flickr.com/photos/mega_100921" class="external" target="_blank">&copy;SHANGCHIEH</a></p>
+					</div>
+					<div class="container">
+						<div class="left thumbnail">
+							<figure>
+								<img loading="lazy" width="256" height="192" src="images/fig22.jpg">
+							</figure>
+						</div>
+						<p>License: CC0<br><a href="https://pixabay.com/ja/users/gshoptw-921632/" class="external" target="_blank">gshoptw</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
