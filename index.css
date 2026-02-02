@@ -55,3 +55,20 @@
 	width:95vw;
 	height:768px;
 }
+div#tab6 {
+	font-family: "Shippori Mincho B1", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+ul.check-list {
+    list-style-type: none; /* デフォルトのドットを消す */
+    padding-left: 20px;
+  }
+
+ul.check-list li::before {
+  content: "☐"; /* 未チェックなら ☐、チェック済み風なら ☑ */
+  margin-right: 10px;
+  display: inline-block;
+  width: 1em;
+}
+
